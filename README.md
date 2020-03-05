@@ -5,9 +5,7 @@ Description: A planned set of functions defining a main function/program to auto
 
 ===============================
 
-repair_function content:
-
-[repair_function] (contains the following planned functions)
+- [repair_function] (contains the following planned functions)
 -	[server_check] (checks for error Jobs in Commvault Databases and seperates all found errors to different subtasks)
 -	[subtask(x)] (divides the errors found from [server_check], where x stands for the Job ID)
 -	[repair_function_log] (documents all steps made by [repair_function])
