@@ -10,7 +10,7 @@ repair_function content:
 [repair_function] (contains the following planned functions)
 	[server_check] (checks for error Jobs in Commvault Databases and seperates all found errors to different subtasks)
 	[subtask(x)] (divides the errors found from [server_check], where x stands for the Job ID)
-	[repair_function_log] (documents all steps made by [repair_function] and exports [server_check_detail] into [repair_function_log.txt]
+	[repair_function_log] (documents all steps made by [repair_function])
 	[server_check_detail] (the detail of an Job error)
 	[specific_error] (virtual machine in Waiting or Pending state {with subcategories})
 	[specific_repair_action_confirmation] (approves [specific_repair_action] to be executed)
@@ -33,7 +33,7 @@ if detecting [specific_error]
 |		|		|	then run [specific_repair_action]
 |		|		|		if [specific_repair_action] finished
 |		|		|       then send [repair_function_log] to [responsible] and [engineer]
-|   |   |
+|		|		|
 |		|		if [confirmation] from [engineer] = no
 |		|	send [repair_function_log] to [engineer] (for validation)
 |		|
@@ -82,7 +82,7 @@ string concatenation       	[to keep it compact (combines strings]
 setattr()			              [to set an attribute (property/method) of an object]
 insert()			              [to add an element at the specified position]
 
-read()		                	[returns the file content]
+read()		                	[to return the file content]
 
 
 [Note that I am not yet familiar with all functions an still in research mode]
