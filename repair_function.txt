@@ -1,0 +1,87 @@
+repair_function content:
+
+
+[repair_function] (contains the following planned functions)
+	[server_check] (checks for error Jobs in DB's and seperates all found errors to different subtasks)
+	[subtask(x)] (divides the errors found from [server_check], where x stands for the Job ID)
+	[repair_function_log] (documents all steps made by [repair_function] and exports [server_check_detail] into [repair_function_log.txt]
+	[server_check_detail] (the detail of an error Job)
+	[specific_repair_action_log]
+	[specific_error] (Server Waiting or Pending{with subcategories})
+	[specific_repair_action_confirmation] (approves [specific_repair_action] to be executed)
+	[specific_repair_action] (assigned to each [specific_error])
+	[responsible] (usually Service Managers/Owners)
+	[engineer] (Server Administrators/Supports)
+
+===============================
+repair_function concept:
+
+
+[server_check] sequencer(interval = 01:00)
+	run [repair_function_log]
+
+if detecting [specific_error] 
+|	then send [repair_function_log] and [specific_repair_action_confirmation] to [responsible] and [engineer]
+|		if [specific_repair_action_confirmation] = yes
+|		|	then send [specific_repair_action_confirmation] to [engineer]
+|		|		if [specific_repair_action_confirmation] from [engineer] = yes	
+|		|		|	then run [specific_repair_action]
+|		|		|		if [specific_repair_action] finished
+|		|		|       then send [repair_function_log] to [responsible] and [engineer]
+|		|		|
+|		|		if [confirmation] from [engineer] = no
+|		|	send [repair_function_log] to [engineer] (for validation)
+|		|
+|		if [confirmation] = no 
+|			send [repair_function_log] to [engineer] (for validation)
+|
+if no [specific_error] do no further action()			
+
+===============================
+
+repair_function expected requironments:
+
+MySQL (connection to the necessary databases(to get errors out of Commvault), 
+access the machines through Teampass(to run the specific_repair_action on the regarding), 
+and to send the reports and confirmation requests via Outlook)
+
+compiler			[tool for analyzing Python source code and generating Python bytecode]
+
+test environment		[for example Selenium - Open Source]
+
+pip			[standard package-management system used to install and manage software packages written in Python]
+
+functions		[to create the functions]
+def			[to define the functions]
+class 		  	[to define the classes]
+function return value	[to return a value from a function]
+function recursion		[to let the function call itself]
+
+while			[to create a while loop]
+while break		[to break out of the while loop]
+loop through list item	[to loop through the items in a list]
+
+dict() 		     	[to return a dictionary (Array)]
+dir()		        	[to return a list of the specified object's properties and methods]
+
+regex	              		[specific to match error cases]
+
+eval()			[to evaluate and execute an expression]
+exec()			[to execute the specified code (or object)]
+
+format()			[to formate a specified value]
+lstrip()			[to keep it compact (returns a left trim version of the string)]
+string concatenation  	[to keep it compact (combines strings]
+
+setattr()			[to set an attribute (property/method) of an object]
+insert()			[to add an element at the specified position]
+
+read()	             	 	[to return the file content]
+
+
+(Note that I am not yet familiar with all functions an still in research mode)
+
+
+===============================
+
+Please feel free to propose any kind of corrections and optimizations, thanks in addition.
