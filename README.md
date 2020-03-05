@@ -17,3 +17,8 @@ repair_function content:
 -	[specific_repair_action] (assigned to each [specific_error])
 -	[responsible] (usually Service Managers/Owners)
 -	[engineer] (Server Administrators/Supports)
+
+
+===============================
+
+Please review repair_function.txt for a more detailed concept
