@@ -44,12 +44,10 @@ repair_function expected requironments:
 MySQL (connection to the necessary databases(to get errors out of Commvault), 
 access the machines through Teampass(to run the specific_repair_action on the regarding), 
 and to send the reports and confirmation requests via Outlook)
-
 compiler		[tool for analyzing Python source code and generating Python bytecode]
-
 test environment	[for example Selenium - Open Source]
-
 pip			[standard package-management system used to install and manage software packages written in Python]
+
 
 functions		[to create the functions]
 def			[to define the functions]
