@@ -45,9 +45,9 @@ MySQL (connection to the necessary databases(to get errors out of Commvault),
 access the machines through Teampass(to run the specific_repair_action on the regarding), 
 and to send the reports and confirmation requests via Outlook)
 
-compiler			[tool for analyzing Python source code and generating Python bytecode]
+compiler		[tool for analyzing Python source code and generating Python bytecode]
 
-test environment		[for example Selenium - Open Source]
+test environment	[for example Selenium - Open Source]
 
 pip			[standard package-management system used to install and manage software packages written in Python]
 
@@ -55,28 +55,28 @@ functions		[to create the functions]
 def			[to define the functions]
 class 		  	[to define the classes]
 function return value	[to return a value from a function]
-function recursion		[to let the function call itself]
+function recursion	[to let the function call itself]
 
 while			[to create a while loop]
 while break		[to break out of the while loop]
 loop through list item	[to loop through the items in a list]
 
 dict() 		     	[to return a dictionary (Array)]
-dir()		        	[to return a list of the specified object's properties and methods]
+dir()		        [to return a list of the specified object's properties and methods]
 
-regex	              		[specific to match error cases]
+regex	              	[specific to match error cases]
 
 eval()			[to evaluate and execute an expression]
 exec()			[to execute the specified code (or object)]
 
-format()			[to formate a specified value]
-lstrip()			[to keep it compact (returns a left trim version of the string)]
+format()		[to formate a specified value]
+lstrip()		[to keep it compact (returns a left trim version of the string)]
 string concatenation  	[to keep it compact (combines strings]
 
-setattr()			[to set an attribute (property/method) of an object]
-insert()			[to add an element at the specified position]
+setattr()		[to set an attribute (property/method) of an object]
+insert()		[to add an element at the specified position]
 
-read()	             	 	[to return the file content]
+read()	             	[to return the file content]
 
 
 (Note that I am not yet familiar with all functions an still in research mode)
