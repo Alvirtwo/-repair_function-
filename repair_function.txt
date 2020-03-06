@@ -45,13 +45,15 @@ MySQL 			[connection to the necessary databases(to get errors out of Commvault),
 			access the machines through Teampass(to run the specific_repair_action on the regarding), 
 			and to send the reports and confirmation requests via Outlook]
 
-SMTP			[to send the mail notification/confirmation request
-			{solve if it is possible to send a confirmation into a program so it receives it}]
+SMTP/IMAP		[to send the mail notification/confirmation request
+(PyzMail)		{solve if it is possible to send a confirmation into a program so it receives it}]
 
 compiler		[tool for analyzing Python source code and generating Python bytecode]
 test environment	[for example Selenium - Open Source]
 pip			[standard package-management system used to install and manage software packages written in Python]
 multithreading		[to run several threads at once]
+GUI automation		[to access specific sections inside programs]
+(PyAutoGUI) 		https://pyautogui.readthedocs.io/en/latest/ (research fps/latency and mouse/keyboard place analyzation{})
 
 functions		[to create the functions]
 def			[to define the functions]
