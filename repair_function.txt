@@ -41,9 +41,10 @@ if no [specific_error] do no further action()
 
 repair_function expected requironments:
 
-MySQL (connection to the necessary databases(to get errors out of Commvault), 
-access the machines through Teampass(to run the specific_repair_action on the regarding), 
-and to send the reports and confirmation requests via Outlook)
+MySQL 			[connection to the necessary databases(to get errors out of Commvault), 
+			access the machines through Teampass(to run the specific_repair_action on the regarding), 
+			and to send the reports and confirmation requests via Outlook]
+			
 compiler		[tool for analyzing Python source code and generating Python bytecode]
 test environment	[for example Selenium - Open Source]
 pip			[standard package-management system used to install and manage software packages written in Python]
@@ -66,7 +67,8 @@ cron()			[to schedule tasks{Linux}]
 webbrowser.open()	[to open websites]
 subprocess.Popen()	[to open subprocesses]
 input()			[to enter passwords without being tracked in the cmd line history{instead of Popen}]
-Popen.sleep()		[to set back the state of a vm after the confirmation was triggered by responsible/engineer]
+time.sleep()		[to set a timer for the possibility of "ctrl-c" canceling the repair_function / 
+			setting back the state of a vm to before the repair_function was run, confirmed by responsible/engineer]
 
 dict() 		     	[to return a dictionary (Array)]
 dir()		        [to return a list of the specified object's properties and methods]
