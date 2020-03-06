@@ -50,6 +50,12 @@ pip			[standard package-management system used to install and manage software pa
 multithreading		[to run several threads at once]
 
 Popen()			[to start other programs]
+poll()			[to check if code finished running]
+wait()			[to wait for the code to finish]
+cron()			[to schedule tasks{Linux}]
+webbrowser.open()	[to open websites]
+subprocess.Popen()	[to open subprocesses]
+
 
 functions		[to create the functions]
 def			[to define the functions]
