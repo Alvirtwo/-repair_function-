@@ -49,6 +49,8 @@ test environment	[for example Selenium - Open Source]
 pip			[standard package-management system used to install and manage software packages written in Python]
 multithreading		[to run several threads at once]
 
+Popen()			[to start other programs]
+
 functions		[to create the functions]
 def			[to define the functions]
 class 		  	[to define the classes]
