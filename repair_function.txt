@@ -44,7 +44,10 @@ repair_function expected requironments:
 MySQL 			[connection to the necessary databases(to get errors out of Commvault), 
 			access the machines through Teampass(to run the specific_repair_action on the regarding), 
 			and to send the reports and confirmation requests via Outlook]
-			
+
+SMTP			[to send the mail notification/confirmation request
+			{solve if it is possible to send a confirmation into a program so it receives it}]
+
 compiler		[tool for analyzing Python source code and generating Python bytecode]
 test environment	[for example Selenium - Open Source]
 pip			[standard package-management system used to install and manage software packages written in Python]
@@ -75,8 +78,8 @@ dir()		        [to return a list of the specified object's properties and method
 
 regex	              	[specific to match error cases]
 
-eval()			[to evaluate and execute an expression]
-exec()			[to execute the specified code (or object)]
+eval()			[to evaluate and execute an expression] X
+exec()			[to execute the specified code (or object)] X
 
 format()		[to formate a specified value]
 lstrip()		[to keep it compact (returns a left trim version of the string)]
