@@ -4,7 +4,7 @@ repair_function content:
 [repair_function] (contains the following planned functions)
 	[server_check] (checks for error Jobs in DB's and seperates all found errors to different subtasks)
 	[subtask(x)] (divides the errors found from [server_check], where x stands for the Job ID)
-	[repair_function_log] (documents all steps made by [repair_function] and exports [server_check_detail] into [repair_function_log.txt]
+	[repair_function_log] (documents all steps made by [repair_function] and exports [server_check_detail] into [repair_function_log]
 	[server_check_detail] (the detail of an error Job)
 	[specific_repair_action_log]
 	[specific_error] (Server Waiting or Pending{with subcategories})
@@ -54,6 +54,9 @@ pip			[standard package-management system used to install and manage software pa
 multithreading		[to run several threads at once]
 GUI automation		[to access specific sections inside programs]
 (PyAutoGUI) 		https://pyautogui.readthedocs.io/en/latest/ (research fps/latency and mouse/keyboard place analyzation{})
+position()		[include in the place analization function]
+locateOnScreen()	[navigation]
+screenshot()		[verification]
 
 functions		[to create the functions]
 def			[to define the functions]
