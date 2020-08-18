@@ -4,11 +4,14 @@ Description: script of functions automating the task to detect, analyze and fixi
 
 ===============================
 
--	[server_check] (checks for error Jobs in Commvault Databases and seperates all found errors to different subtasks)
--	[subtask(x)] (divides the errors found from [server_check], where x stands for the Job ID)
+- [repair function] (groups all following functions) 
 -	[repair_function_log] (documents all steps made by [repair_function])
--	[server_check_detail] (the detail of an Job error)
--	[specific_error] (virtual machine in Waiting or Pending state {with subcategories})
+
+-	[server_check] (checks for error Jobs in Commvault Databases and seperates all found errors to different subtasks)
+-	[server check subtask(x)] (divides the errors found from [server_check], where x stands for the Job ID)
+-	[server_check_subtask(x) detail] (the detail of an Job error)
+
+-	[specific_error] (Virtual machine in Waiting or Pending state {with subcategories})
 -	[specific_repair_action_confirmation] (approves [specific_repair_action] to be executed)
 -	[specific_repair_action] (assigned to each [specific_error])
 -	[responsible] (usually Service Managers/Owners)
